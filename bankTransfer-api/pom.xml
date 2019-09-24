@@ -1,0 +1,45 @@
+<?xml version="1.0"?>
+<project xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd"
+         xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <modelVersion>4.0.0</modelVersion>
+    <parent>
+        <groupId>com.laurynas.banktransfer</groupId>
+        <artifactId>bankTransfer</artifactId>
+        <version>1.0-SNAPSHOT</version>
+    </parent>
+    <groupId>com.laurynas.banktransfer.api</groupId>
+    <artifactId>bankTransfer-api</artifactId>
+    <version>1.0-SNAPSHOT</version>
+    <name>bankTransfer-api</name>
+
+    <dependencies>
+        <dependency>
+            <groupId>io.micronaut</groupId>
+            <artifactId>micronaut-runtime</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>io.micronaut</groupId>
+            <artifactId>micronaut-http-server-netty</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>io.micronaut</groupId>
+            <artifactId>micronaut-inject-java</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>io.micronaut.configuration</groupId>
+            <artifactId>micronaut-hibernate-validator</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>com.laurynas.banktransfer.jpa</groupId>
+            <artifactId>bankTransfer-jpa</artifactId>
+            <version>${version}</version>
+        </dependency>
+        <dependency>
+            <groupId>io.micronaut</groupId>
+            <artifactId>micronaut-http-client</artifactId>
+            <version>${micronaut.version}</version>
+            <scope>test</scope>
+        </dependency>
+    </dependencies>
+</project>
